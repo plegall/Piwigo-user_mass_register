@@ -1,0 +1,1 @@
+Registra muchos usuarios a la vez.
