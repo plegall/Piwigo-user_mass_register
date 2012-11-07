@@ -25,7 +25,7 @@ $lang['Register users'] = 'Εγγραφή χρηστών';
 $lang['Email addresses'] = 'Διευθύνσεις e-mail';
 $lang['(one on each line)'] = '(ένας σε κάθε γραμμή)';
 $lang['%d users registered'] = '%d εγγεγραμμένοι χρήστες';
-$lang['%d registrations on error: %s'] = '%d εγγραφές για σφάλμα: %s';
+$lang['%d registrations on error: %s'] = '%d εγγραφές με σφάλμα: %s';
 $lang['%d email addresses rejected: %s'] = '%d διευθύνσεις ηλεκτρονικού ταχυδρομείου απορρίπτονται: %s';
-$lang['%d email addresses already exist: %s'] = '%d διευθύνσεις ηλεκτρονικού ταχυδρομείου υπάρχουν ήδη: %s';
+$lang['%d email addresses already exist: %s'] = '%d διευθύνσεις ηλεκτρονικού ταχυδρομείου ήδη υπάρχουν: %s';
 ?>
