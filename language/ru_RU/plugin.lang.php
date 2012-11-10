@@ -27,4 +27,5 @@ $lang['(one on each line)'] = '(по одному в строку)';
 $lang['Email addresses'] = 'Адреса Email';
 $lang['Register users'] = 'Регистрация пользователей';
 $lang['User Mass Register'] = 'Массовая регистрация пользователей';
+$lang['%d registrations on error: %s'] = 'во время регистрации произошли %d ошибки(ок), аккаунты: %s';
 ?>
