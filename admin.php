@@ -72,16 +72,25 @@ $tabsheet->assign();
 
 if (isset($_POST['submit']))
 {
-  $emails = explode("\n", $_POST['emails']);
+  $lines = explode("\n", $_POST['users']);
 
   $emails_to_create = array();
   $emails_rejected = array();
   $emails_already_exist = array();
   $emails_created = array();
   $emails_on_error = array();
+  $username_for = array();
   
-  foreach ($emails as $email)
+  foreach ($lines as $line)
   {
+    $fields = explode(';', $line);
+    $email = trim($fields[0]);
+
+    if (isset($fields[1]))
+    {
+      $username_for[$email] = trim($fields[1]);
+    }
+
     $email = trim($email);
 
     // this test requires PHP 5.2+
@@ -107,9 +116,16 @@ if (isset($_POST['submit']))
   foreach ($emails_to_create as $email)
   {    
     // find a username
-    list($base_username,) = explode('@', $email);
+    if (isset($username_for[$email]))
+    {
+      $username = $username_for[$email];
+    }
+    else
+    {
+      list($username,) = explode('@', $email);
+    }
     
-    $username = $base_username;
+    $base_username = $username;
     $i = 2;
     while (get_userid($username))
     {

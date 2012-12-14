@@ -7,4 +7,5 @@ $lang['%d users registered'] = '%d utilisateurs enregistrés';
 $lang['%d registrations on error: %s'] = '%d enregistrement en erreur : %s';
 $lang['%d email addresses rejected: %s'] = '%d adresses email rejetées : %s';
 $lang['%d email addresses already exist: %s'] = '%d adresse email existent déjà : %s';
+$lang['Example'] = 'Exemple';
 ?>
