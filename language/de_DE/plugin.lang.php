@@ -28,4 +28,5 @@ $lang['(one on each line)'] = '(jeweils einer pro Zeile)';
 $lang['Email addresses'] = 'E-Mail Adressen';
 $lang['Register users'] = 'Benutzer registrieren';
 $lang['User Mass Register'] = 'Benutzer Massenregistrierung';
+$lang['Example'] = 'Beispiel';
 ?>
