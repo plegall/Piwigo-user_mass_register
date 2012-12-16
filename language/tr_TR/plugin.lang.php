@@ -28,4 +28,5 @@ $lang['%d users registered'] = '%d kullanıcı kaydedildi';
 $lang['%d registrations on error: %s'] = '%d hatalı kayıtlar: %s';
 $lang['%d email addresses rejected: %s'] = '%d red edilen eposta adresleri: %s';
 $lang['%d email addresses already exist: %s'] = '%d zaten var olan eposta adresleri: %s';
+$lang['Example'] = 'Örnek';
 ?>
