@@ -28,4 +28,5 @@ $lang['(one on each line)'] = '(en på hver linje)';
 $lang['Email addresses'] = 'E-mail-adresser';
 $lang['Register users'] = 'Registrer brugere';
 $lang['User Mass Register'] = 'User Mass Register';
+$lang['Example'] = 'Eksempel';
 ?>
