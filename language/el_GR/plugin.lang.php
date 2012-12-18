@@ -28,4 +28,5 @@ $lang['%d users registered'] = '%d εγγεγραμμένοι χρήστες';
 $lang['%d registrations on error: %s'] = '%d εγγραφές με σφάλμα: %s';
 $lang['%d email addresses rejected: %s'] = '%d διευθύνσεις ηλεκτρονικού ταχυδρομείου απορρίπτονται: %s';
 $lang['%d email addresses already exist: %s'] = '%d διευθύνσεις ηλεκτρονικού ταχυδρομείου ήδη υπάρχουν: %s';
+$lang['Example'] = 'Παράδειγμα';
 ?>
