@@ -28,4 +28,5 @@ $lang['(one on each line)'] = '(每行一个)';
 $lang['Email addresses'] = '邮件地址';
 $lang['Register users'] = '注册用户';
 $lang['User Mass Register'] = '用户批量注册';
+$lang['Example'] = '例子';
 ?>
