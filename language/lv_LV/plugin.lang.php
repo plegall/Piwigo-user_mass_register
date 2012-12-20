@@ -28,4 +28,5 @@ $lang['Email addresses'] = 'E-pasta adreses';
 $lang['(one on each line)'] = '(pa vienam katrā rindā)';
 $lang['%d email addresses rejected: %s'] = '%d e-pasta adreses atteiktas: %s';
 $lang['%d email addresses already exist: %s'] = '%d e-pasta adreses jau eksistē: %s ';
+$lang['Example'] = 'Piemērs';
 ?>
