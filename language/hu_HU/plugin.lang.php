@@ -27,5 +27,6 @@ $lang['%d users registered'] = '%d regisztrált felhasználók';
 $lang['(one on each line)'] = '(minden sorban egy)';
 $lang['Email addresses'] = 'Email címek';
 $lang['Register users'] = 'Felhasználók regisztrálása';
-$lang['User Mass Register'] = 'Felhasználó Mass Regisztráció';
+$lang['User Mass Register'] = 'Felhasználók kötegelt regisztrációja';
+$lang['Example'] = 'Például';
 ?>
