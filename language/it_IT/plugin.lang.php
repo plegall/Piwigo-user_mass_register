@@ -28,4 +28,5 @@ $lang['(one on each line)'] = '(uno su ogni riga)';
 $lang['%d users registered'] = '%d utenti registrati';
 $lang['%d email addresses rejected: %s'] = '%d indirizzo email rifiutato: %s';
 $lang['%d email addresses already exist: %s'] = '%d indirizzo email già presente: %s';
+$lang['Example'] = 'Esempio';
 ?>
