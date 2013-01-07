@@ -1,0 +1,1 @@
+Registre vários usuários de uma única vez.
