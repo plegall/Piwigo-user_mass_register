@@ -28,4 +28,5 @@ $lang['%d users registered'] = '%d odmietnutých používateľov';
 $lang['%d registrations on error: %s'] = '%d chybných registrácií: %s';
 $lang['%d email addresses rejected: %s'] = '%d emailová adresa odmietnutá: %s';
 $lang['%d email addresses already exist: %s'] = '%d emailová adresa už existuje: %s';
+$lang['Example'] = 'Príklad';
 ?>
