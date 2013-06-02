@@ -1,0 +1,1 @@
+Permet registrar molts usuaris a la vegada.
