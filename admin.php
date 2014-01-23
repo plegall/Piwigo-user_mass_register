@@ -8,41 +8,6 @@ if (!defined("PHPWG_ROOT_PATH"))
 // | Functions                                                             |
 // +-----------------------------------------------------------------------+
 
-function register_user_and_notify($login, $password, $mail_address)
-{
-  global $conf;
-  
-  $errors = register_user($login, $password, $mail_address, false);
-
-  if (empty($errors))
-  {
-    include_once(PHPWG_ROOT_PATH.'include/functions_mail.inc.php');
-        
-    $keyargs_content = array(
-      get_l10n_args('Hello %s,', $login),
-      get_l10n_args('Thank you for registering at %s!', $conf['gallery_title']),
-      get_l10n_args('', ''),
-      get_l10n_args('Here are your connection settings', ''),
-      get_l10n_args('Username: %s', $login),
-      get_l10n_args('Password: %s', $password),
-      get_l10n_args('Email: %s', $mail_address),
-      get_l10n_args('', ''),
-      get_l10n_args('If you think you\'ve received this email in error, please contact us at %s', get_webmaster_mail_address()),
-      );
-    
-    pwg_mail(
-      $mail_address,
-      array(
-        'subject' => '['.$conf['gallery_title'].'] '.l10n('Registration'),
-        'content' => l10n_args($keyargs_content),
-        'content_format' => 'text/plain',
-        )
-      );
-  }
-
-  return $errors;
-}
-
 // +-----------------------------------------------------------------------+
 // | Check Access and exit when user status is not ok                      |
 // +-----------------------------------------------------------------------+
@@ -135,7 +100,7 @@ if (isset($_POST['submit']))
     // find a password
     $password = generate_key(8);
 
-    $errors = register_user_and_notify($username, $password, $email);
+    $user_id = register_user($username, $password, $email, true, $errors, true);
     if (!empty($errors))
     {
       $emails_on_error[] = $email;
