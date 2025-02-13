@@ -98,9 +98,7 @@ if (isset($_POST['submit']))
     }
 
     // find a password
-    $password = generate_key(8);
-
-    $user_id = register_user($username, $password, $email, true, $errors, true);
+    $user_id = register_user($username, generate_key(16), $email, true, $errors, false);
     if (!empty($errors))
     {
       $emails_on_error[] = $email;
@@ -108,6 +106,12 @@ if (isset($_POST['submit']))
     else
     {
       $emails_created[] = $email;
+
+      switch_lang_to(get_default_language());
+      $generate_link = generate_password_link($user_id, true);
+      $email_params = pwg_generate_set_password_mail($username, $generate_link['password_link'], $conf['gallery_title'], $generate_link['time_validation']);
+      pwg_mail($email, $email_params);
+      switch_lang_back();
     }
   }
 

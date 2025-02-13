@@ -24,7 +24,7 @@ fieldset p {text-align:left;margin:0;}
 {*
     <strong>{'Email addresses'|@translate}</strong> {'(one on each line)'|@translate}<br>
 *}
-    <textarea name="users" style="width:500px;height:300px;">{$EMAILS}</textarea>
+    <textarea name="users" style="width:500px;height:300px;">{$EMAILS|default:''}</textarea>
   </p>
 
   <p style="margin-top:10px"><input type="submit" name="submit" value="{'Submit'|@translate}"></p>
